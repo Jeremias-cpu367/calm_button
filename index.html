@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Premere in caso di dubbi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🎥 VIDEO DE FONDO -->
+  <!-- VIDEO PARA ESCRITORIO -->
+<video autoplay muted loop id="videoDesktop">
+  <source src="assets/fondo.mp4" type="video/mp4" />
+</video>
+
+<!-- VIDEO PARA MÓVIL -->
+<video autoplay muted loop id="videoMobile">
+  <source src="assets/fondovertical.mp4" type="video/mp4" />
+</video>
+
+
+  <div class="container">
+    <button id="calmButton">
+      <img src="assets/button.png" alt="Premere in caso di dubbi" />
+    </button>
+
+    <div id="popup" class="hidden">
+      <p id="frase">Caricamento...</p>
+      <img id="immagine" src="" alt="immagine" class="random-image hidden" />
+      <video id="videoPopup" class="hidden" controls autoplay muted>
+  <source id="videoSource" src="" type="video/mp4">
+  Il tuo browser non supporta il video.
+</video>
+
+      <button id="closePopup">Chiudi</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
